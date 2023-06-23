@@ -1,8 +1,18 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: #0E131E;
+  height: 2000px;
 }
 
-.container-size {
-  width: 62vw;;
+@media (min-width: 1024px) {
+  .container-size {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-size {
+    width: 62vw;
+  }
 }

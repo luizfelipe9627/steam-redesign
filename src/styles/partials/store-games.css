@@ -1,0 +1,13 @@
+.store-games {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-img img {
+  position: relative;
+}
+
+.game-title img {
+  position: absolute;
+  left: 0;
+}

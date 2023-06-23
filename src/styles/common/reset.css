@@ -11,3 +11,13 @@ ul {
 a {
   text-decoration: none;
 }
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

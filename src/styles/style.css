@@ -1,7 +1,16 @@
 @import url('./fonts/font.css');
+
 @import url('./common/global.css');
 @import url('./common/reset.css');
+
 @import url('./utils/variables.css');
-@import url('./partials/navegacao.css');
+
+@import url('./partials/header.css');
+
 @import url('./partials/featured.css');
+
+@import url('./partials/store-navegation.css');
+@import url('./partials/store-search.css');
+@import url('./partials/store-games.css');
+
 @import url('./partials/footer.css');

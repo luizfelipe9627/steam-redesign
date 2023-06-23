@@ -3,7 +3,7 @@
   /* background-position: center; */
 }
 
-.fundo {
+.background-dark {
   background: linear-gradient(266.12deg, rgba(14, 19, 30, 0) 0%, rgba(14, 19, 30, 0.7) 44.25%, rgba(14, 19, 30, 0.7) 88.17%, rgba(14, 19, 30, 0) 100%);
   height: 500px;
   display: flex;
@@ -40,4 +40,24 @@
   line-height: 19px;
   text-transform: uppercase;
   color: #FFF;
+}
+
+.featured-line {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-line span {
+  width: 64px;
+  height: 6px;
+  margin: 32px 0 80px 0;
+  background-color: #FFF;
+  margin-left: 24px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.featured-line span.active {
+  background-color: var(--blue-30);
+  cursor: default;
 }

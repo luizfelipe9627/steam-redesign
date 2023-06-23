@@ -14,70 +14,129 @@
 
 <body>
   <header class="header">
-    <div class="logo">
-      <a href="#"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
-    </div>
-
-    <div class="container-nav">
-      <nav class="nav">
-        <ul class="items">
-          <li class="active"><a href="#loja">Loja</a></li>
-          <li><a href="#biblioteca">Biblioteca</a></li>
-          <li><a href="#comunidade">Comunidade</a></li>
-          <li><a href="#perfil">Perfil</a></li>
-        </ul>
-      </nav>
-
-      <div class="tools">
-        <div class="bell">
-          <a href="#"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
-        </div>
-
-        <div class="message">
-          <a href="#"> <img src="./src/assets/svg/message-circle.svg" alt="Mensagem"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="profile">
-      <div class="profile-img">
-        <a href="#profile"><img src="./src/assets/img/profile.png" alt="Perfil"></a>
+    <div class="container-size">
+      <div class="logo">
+        <a href="#"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
       </div>
 
-      <div class="profile-dropdown">
-        <a href="#profile-dropdown"><img src="./src/assets/svg/chevron-right.svg" alt="Seta"></a>
+      <div class="container-nav">
+        <nav>
+          <ul>
+            <li class="active"><a href="#loja">Loja</a></li>
+            <li><a href="#biblioteca">Biblioteca</a></li>
+            <li><a href="#comunidade">Comunidade</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+          </ul>
+        </nav>
+
+        <div class="tools">
+          <div class="bell">
+            <a href="#"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
+          </div>
+
+          <div class="message">
+            <a href="#"> <img src="./src/assets/svg/message-circle.svg" alt="Mensagem"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="profile-img">
+          <a href="#profile"><img src="./src/assets/img/profile.png" alt="Perfil"></a>
+        </div>
+
+        <div class="profile-dropdown">
+          <a href="#dropdown"><img src="./src/assets/svg/chevron-right.svg" alt="Seta"></a>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="featured-game">
-      <div class="fundo">
-        <div class="game container-size">
-          <div class="game-title">
-            <img src="./src/assets/svg/reade-dead.svg" alt="Read Dead Redemption II">
-          </div>
+    <section class="featureds-games">
+      <div class="featured-game">
+        <div class="background-dark">
+          <div class="game container-size">
+            <div class="game-title">
+              <img src="./src/assets/svg/reade-dead.svg" alt="Read Dead Redemption II">
+            </div>
 
-          <div class="game-desc">
-            <p> Estados Unidos, 1899. O fim da era do velho oeste começou, e as autoridades estão caçando as últimas gangues de fora da lei que restam. Os que não se rendem, nem sucumbem, são mortos.</p>
-          </div>
+            <div class="game-desc">
+              <p> Estados Unidos, 1899. O fim da era do velho oeste começou, e as autoridades estão caçando as últimas gangues de fora da lei que restam. Os que não se rendem, nem sucumbem, são mortos.</p>
+            </div>
 
-          <div class="game-buy">
-            <button><a href="#comprar">Compre agora</a></button>
+            <div class="game-buy">
+              <button><a href="#comprar">Compre agora</a></button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="featured-nav">
-      <span></span>
-      <span class="active"></span>
-      <span></span>
-      <span></span>
+      <div class="featured-line">
+        <span></span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
     </section>
 
     <section class="store container-size">
-      <section class="store-main"></section>
+      <section class="container-store">
+        <nav class="store-navegation">
+          <ul>
+            <li class="active">
+              <a href="#novidades-e-tendencias">Novidades e tendências</a>
+            </li>
+            <li>
+              <a href="#categorias">Categorias</a>
+            </li>
+            <li>
+              <a href="#loja-de-pontos">Loja de pontos</a>
+            </li>
+            <li>
+              <a href="#noticias">Notícias</a>
+            </li>
+            <li>
+              <a href="#laboratorio">Laboratório</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="store-search">
+          <form>
+            <input type="text" placeholder="Buscar jogo" required>
+
+            <button type="submit">
+              <img src="./src/assets/svg/search.svg" alt="Lupa">
+            </button>
+          </form>
+        </div>
+
+        <div class="store-games">
+          <div class="game">
+            <div class="game-img">
+              <img src="./src/assets/img/farcry6.png" alt="FarCry6">
+            </div>
+
+            <div class="game-title">
+              <img src="./src/assets/svg/farcry6.svg" alt="FarCry6">
+            </div>
+          </div>
+
+          <div class="game">
+            <img src="./src/assets/img/forza-horizon.png" alt="Forza Horizon">
+          </div>
+
+          <div class="game">
+            <img src="./src/assets/img/fifa.png" alt="Fifa">
+          </div>
+
+          <div class="game">
+            <img src="./src/assets/img/minecraft-1.png" alt="Minecraft">
+          </div>
+        </div>
+      </section>
+
       <section class="store-nav"></section>
       <section class="store-categories"></section>
       <section class="store-games-free"></section>
@@ -85,9 +144,9 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <img src="./src/assets/svg/steam.svg" alt="Logo">
-  </footer>
+  </footer> -->
 
   <script type="module" src="./src/scripts/script.js"></script>
 </body>
