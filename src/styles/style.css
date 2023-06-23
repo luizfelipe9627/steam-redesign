@@ -1,0 +1,7 @@
+@import url('./fonts/font.css');
+@import url('./common/global.css');
+@import url('./common/reset.css');
+@import url('./utils/variables.css');
+@import url('./partials/navegacao.css');
+@import url('./partials/featured.css');
+@import url('./partials/footer.css');
