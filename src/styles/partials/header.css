@@ -6,6 +6,8 @@
 
 .header .container-size {
   display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .container-nav {

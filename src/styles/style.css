@@ -9,8 +9,8 @@
 
 @import url('./partials/featured.css');
 
-@import url('./partials/store-navegation.css');
-@import url('./partials/store-search.css');
-@import url('./partials/store-games.css');
+@import url('./partials/store-main.css');
+@import url('./partials/store-nav.css');
+@import url('./partials//store-categories.css');
 
 @import url('./partials/footer.css');

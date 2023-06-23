@@ -1,0 +1,38 @@
+.game-category-title h2 {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin: 12px 0 20px 0;
+}
+
+.game-category {
+  margin-bottom: 40px;
+}
+
+.game-discount-porcent {
+  padding: 4px 8px;
+  background-color: var(--blue-30);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #FFF;
+}
+
+.game-price-before {
+  margin: 0 18px 0 12px;
+}
+
+.game-price-before, .game-price-now {
+  color: var(--dark-30);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-decoration: line-through;
+}
+
+.game-price-now {
+  color: #FFF;
+  text-decoration: none;
+}

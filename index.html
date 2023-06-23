@@ -8,7 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link rel="shortcut icon" href="./src/assets/svg/favicon.svg" type="image/x-icon">
+
   <link rel="stylesheet" href="./src/styles/style.css">
+
   <title>Steam</title>
 </head>
 
@@ -16,7 +19,7 @@
   <header class="header">
     <div class="container-size">
       <div class="logo">
-        <a href="#"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
+        <a href="#logo"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
       </div>
 
       <div class="container-nav">
@@ -31,11 +34,11 @@
 
         <div class="tools">
           <div class="bell">
-            <a href="#"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
+            <a href="#sino"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
           </div>
 
           <div class="message">
-            <a href="#"> <img src="./src/assets/svg/message-circle.svg" alt="Mensagem"></a>
+            <a href="#mensagem"> <img src="./src/assets/svg/message-circle.svg" alt="Mensagem"></a>
           </div>
         </div>
       </div>
@@ -115,31 +118,87 @@
         <div class="store-games">
           <div class="game">
             <div class="game-img">
-              <img src="./src/assets/img/farcry6.png" alt="FarCry6">
+              <a href="#farycry6"><img src="./src/assets/img/farcry6.png" alt="FarCry6"></a>
             </div>
 
             <div class="game-title">
-              <img src="./src/assets/svg/farcry6.svg" alt="FarCry6">
+              <a href="#farycry6"><img src="./src/assets/svg/farcry6.svg" alt="FarCry6"></a>
             </div>
           </div>
 
           <div class="game">
-            <img src="./src/assets/img/forza-horizon.png" alt="Forza Horizon">
+            <div class="game-img">
+              <a href="#forza-horizon"><img src="./src/assets/img/forza-horizon.png" alt="Forza Horizon"></a>
+            </div>
+
+            <div class="game-title">
+              <a href="#forza-horizon"><img src="./src/assets/svg/forza-horizon.svg" alt="Forza Horizon"></a>
+            </div>
           </div>
 
           <div class="game">
-            <img src="./src/assets/img/fifa.png" alt="Fifa">
+            <div class="game-img">
+              <a href="#fifa"><img src="./src/assets/img/fifa.png" alt="Fifa"></a>
+            </div>
+
+            <div class="game-title">
+              <a href="#fifa"><img src="./src/assets/svg/fifa.svg" alt="Fifa"></a>
+            </div>
           </div>
 
           <div class="game">
-            <img src="./src/assets/img/minecraft-1.png" alt="Minecraft">
+            <div class="game-img">
+              <a href="#minecraft"><img src="./src/assets/img/minecraft-1.png" alt="Minecraft"></a>
+            </div>
+
+            <div class="game-title">
+              <a href="#minecraft"><img src="./src/assets/svg/minecraft.svg" alt="Minecraft"></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="store-nav"></section>
-      <section class="store-categories"></section>
-      <section class="store-games-free"></section>
+      <section class="store-nav">
+        <h1 class="title">Navegar pelo steam</h1>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#lancamentos">Lançamentos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#jogos-gratuitos">Jogos gratuitos</a></li>
+            <li><a href="#mais-vendidos">Mais vendidos</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="store-categories">
+        <h1 class="title">Explore por categoria</h1>
+
+        <div class="games-categories">
+          <div class="game-category">
+            <div class="game-category-img">
+              <a href="#assasins-creed-valhalla"> <img src="./src/assets/img/assassins-creed-valhalla.png" alt="Assasins Creed Valhalla"></a>
+            </div>
+
+            <div class="game-category-title">
+              <h2>Assasins Creed Valhalla</h2>
+            </div>
+
+            <div class="game-category-infos">
+              <span class="game-discount-porcent">-10%</span>
+              <span class="game-price-before">R$ 100,00</span>
+              <span class="game-price-now">R$ 90,00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colocar o restante. -->
+      </section>
+
+      <section class="store-games-free">
+        <h1 class="title">Jogos gratuitos</h1>
+
+      </section>
       <section class="store-scroll"></section>
     </section>
   </main>

@@ -4,6 +4,15 @@ body {
   height: 2000px;
 }
 
+.title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
 @media (min-width: 1024px) {
   .container-size {
     width: 80vw;
@@ -13,6 +22,6 @@ body {
 
 @media (min-width: 1920px) {
   .container-size {
-    width: 62vw;
+    width: 63vw;
   }
 }
