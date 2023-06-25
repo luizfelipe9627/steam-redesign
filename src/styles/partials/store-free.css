@@ -1,0 +1,90 @@
+.games-free {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "game1 game2 game3"
+    "game1 game2 game4";
+  ;
+  margin-bottom: 100px;
+}
+
+.game-free {
+  display: grid;
+}
+
+.game-free img {
+  width: 100%;
+  height: auto;
+}
+
+.game-free-title h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #FFF;
+}
+
+.game-free-desc p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: var(--dark-30);
+  margin: 12px 0 24px 0;
+}
+
+.game-free-price .game-price-before {
+  margin: 0 16px 0 40px;
+}
+
+.game-free-container {
+  display: grid;
+  background-color: var(--dark-20);
+  border-radius: 0 0 4px 4px;
+}
+
+
+.game-free-infos {
+  padding: 32px;
+}
+
+.game-free-price p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.game-free-day img {
+  width: 100%;
+}
+
+.game-free-day .game-free-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-20);
+  padding: 18px 15px;
+  border-radius: 0 0 4px 4px;
+}
+
+.game-free-day .game-discount-porcent {
+  margin-right: 24px;
+}
+
+.game1 {
+  grid-area: game1;
+}
+
+.game2 {
+  grid-area: game2;
+}
+
+.game3 {
+  grid-area: game3;
+}
+
+.game4 {
+  grid-area: game4;
+}
+

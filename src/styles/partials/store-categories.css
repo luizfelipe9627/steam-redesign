@@ -1,3 +1,14 @@
+.games-categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 100px;
+}
+
+.games-category img {
+  width: 100%;
+}
+
 .game-category-title h2 {
   color: #FFFFFF;
   font-size: 16px;

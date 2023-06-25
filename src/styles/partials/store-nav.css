@@ -3,8 +3,9 @@
 }
 
 .store-nav ul {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
 .store-nav li a {
@@ -16,7 +17,6 @@
   line-height: 22px;
   color: #FFFFFF;
   text-transform: uppercase;
-  width: 280px;
   height: 60px;
   background-color: var(--blue-30);
   border-radius: 4px;
