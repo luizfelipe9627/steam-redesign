@@ -116,7 +116,6 @@
   .container-nav ul li.active {
     height: auto;
     display: block;
-    border-bottom: 2px solid #FFF;
     border-top: 2px solid #fff;
   }
 
@@ -134,7 +133,7 @@
     justify-content: center;
   }
 
-  .container-size nav.active {
+  .container-size .container-nav .nav.active {
     display: flex;
   }
 
@@ -142,7 +141,7 @@
     justify-content: space-between;
 }
 
-  .container-size .container-nav ul li {
+  .container-size .container-nav .nav ul li {
     margin-left: 0;
     border-bottom: 2px solid #FFF;
   }
@@ -175,18 +174,18 @@
     z-index: 999;
   }
 
-  .container-nav li a {
+  .container-nav .nav li a {
     font-size: 0.9375rem;
     height: 3.75rem;
     margin-left: 1.875rem;
   }
 
-  .container-nav ul {
+  .container-nav .nav ul {
     display: flex;
     flex-direction: column;  
   }
 
-  .container-nav li, .tools {
+  .container-nav .nav li, .tools {
     padding: 1.25rem 0;
     width: 50vw;
   }

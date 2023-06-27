@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 1175px) {
+@media (min-width: 900px) and (max-width: 1175px) {
   .store-categories .games-categories {
     grid-template-columns: repeat(3, 1fr);
   }
