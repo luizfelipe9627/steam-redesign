@@ -12,15 +12,7 @@ body {
   line-height: 29px;
 }
 
-@media (min-width: 1024px) {
-  .container-size {
-    width: 80vw;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1920px) {
-  .container-size {
-    width: 63vw;
-  }
+.container-size {
+  width: 80vw;
+  margin: 0 auto;
 }

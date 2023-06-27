@@ -108,3 +108,142 @@
   margin-left: 14px;
 }
 
+.menu-hamburguer {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .container-nav ul li.active {
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #FFF;
+    border-top: 2px solid #fff;
+  }
+
+  .container-size {
+    flex-direction: row;
+  }
+
+  .container-nav {
+    display: none;
+    position: absolute;
+  }
+
+  .container-nav.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-size nav.active {
+    display: flex;
+  }
+
+  .header .container-size {
+    justify-content: space-between;
+}
+
+  .container-size .container-nav ul li {
+    margin-left: 0;
+    border-bottom: 2px solid #FFF;
+  }
+
+  .container-size {
+    max-width: 100vw;
+    position: relative;
+  }
+
+  .message {
+    margin: 0 0 0 40px;
+  }
+
+  .tools {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-20);
+    position: absolute;
+    top: 39px;
+    z-index: 999;
+    left: -40px;
+  }
+
+  .container-size .container-nav .nav {
+    display: none;
+    background-color: var(--dark-20);
+    position: absolute;
+    left: -40px;
+    top: 119px;
+    z-index: 999;
+  }
+
+  .container-nav li a {
+    font-size: 0.9375rem;
+    height: 3.75rem;
+    margin-left: 1.875rem;
+  }
+
+  .container-nav ul {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .container-nav li, .tools {
+    padding: 1.25rem 0;
+    width: 50vw;
+  }
+
+  .menu-hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #checkbox-menu {
+    position: absolute;
+    display: none;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 0.5rem;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(2) {
+    display: none;
+  }
+
+  #checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 0.5rem;
+  }
+
+  .container-size label {
+    position: relative;
+    display: block;
+    height: 1.25rem;
+    width: 1.5625rem;
+  }
+
+  .container-size label span {
+    position: absolute;
+    display: block;
+    height: 0.3125rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1.875rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+  }
+
+  .container-size label span:nth-child(1) {
+    top: 0;
+  }
+
+  .container-size label span:nth-child(2) {
+    top: 0.5rem;
+  }
+
+  .container-size label span:nth-child(3) {
+    top: 1rem;
+  }
+}

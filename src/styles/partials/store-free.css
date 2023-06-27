@@ -88,3 +88,47 @@
   grid-area: game4;
 }
 
+@media (min-width: 320px) and (max-width: 1200px) {
+  .store-games-free .games-free {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "game1 game2"
+      "game3 game4";
+  }
+
+  .store-games-free .game-free-price .game-price-before {
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .store-games-free .games-free {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "game1"
+      "game2"
+      "game3"
+      "game4";
+  }
+}
+
+@media (min-width: 320px) and (max-width: 370px) {
+  .game-free-day .game-free-price {
+    display: block;  
+  }
+
+  .game-free-day .game-free-price p {
+    margin-bottom: 16px;
+  }
+
+  .game-free-container .game-price-now {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .games-free {
+    gap: 32px;
+  }
+}

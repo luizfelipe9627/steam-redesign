@@ -1,6 +1,6 @@
 .featured-game {
   background-image: url('../../assets/img/read-dead.png');
-  /* background-position: center; */
+  background-position: center;
 }
 
 .background-dark {
@@ -52,9 +52,12 @@
   height: 6px;
   margin: 32px 0 80px 0;
   background-color: #FFF;
-  margin-left: 24px;
   border-radius: 1px;
   cursor: pointer;
+}
+
+.featured-line span:not(:last-child) {
+  margin-right: 24px;
 }
 
 .featured-line span.active {

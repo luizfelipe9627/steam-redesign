@@ -11,7 +11,6 @@
 .store-navegation ul {
   display: flex;
   justify-content: space-between;
-
 }
 
 .store-navegation ul li a {
@@ -73,26 +72,41 @@
 /* Store games */
 
 .store-games {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
   margin-bottom: 100px;
 }
 
-.store-games .game {
+.store-games .games {
   display: flex;
-  align-items: center;
-  position: relative;
+  justify-content: space-between;
   cursor: pointer;
+  gap: 16px;
 }
 
-
-.store-games .game-title {
-  position: absolute;
-  right: 70px;
-  bottom: 40px;
+.store-games .game img {
+  width: 100vw;
 }
 
-.game:last-child .game-title {
-  right: 55px;
+@media (min-width: 320px) and (max-width: 720px) {
+  .store-games .games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1100px) {
+  .store-navegation ul li {
+    margin-left: 20px;
+  }
+
+  .store-navegation ul {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 1920px) {
+  .store-games .games {
+    gap: 32px;
+  }
 }

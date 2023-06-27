@@ -4,3 +4,7 @@
   padding: 20px;
   background-color: var(--dark-20);
 }
+
+.store-scroll-desc, .store-scroll-title {
+  text-align: center;
+}

@@ -21,3 +21,21 @@
   background-color: var(--blue-30);
   border-radius: 4px;
 }
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .store-nav ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+  .store-nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .store-nav ul {
+    gap: 32px;
+  }
+}
