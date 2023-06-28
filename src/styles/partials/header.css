@@ -129,7 +129,6 @@
     left: -40px;
     top: 115px;
     z-index: 999;
-    height: 100vh;
   }
 
   .container-size .container-nav.active {
