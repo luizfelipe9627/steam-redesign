@@ -1,0 +1,58 @@
+[data-dropdown] {
+  position: relative;
+}
+
+[data-dropdown] .dropdown-menu {
+  display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu, [data-dropdown].active .dropdown-menu {
+  display: block;
+  /* O forwards é usado para quando acontecer a animação ele continuar no fim da animação. */
+  animation: show-up .5s forwards;
+}
+
+.profile-dropdown img {
+  transition: transform .3s;
+}
+
+.profile-dropdown.active img {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: var(--dark-20);
+  border: 2px solid #FFF;
+  z-index: 999;
+  top: 35px;
+  right: -10px;
+  padding: 15px;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+}
+
+.dropdown-menu li a{
+  color: #FFF;
+}
+
+.dropdown-menu li a:hover {
+  color: var(--blue-30);
+  font-weight: bold;
+}
+
+.dropdown-menu::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+}
+

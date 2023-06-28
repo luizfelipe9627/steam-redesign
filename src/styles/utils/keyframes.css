@@ -11,3 +11,17 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@keyframes show-up {
+  /* Sai da opacidade 0 e de 30px do eixo Y. */
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  /* Para opacidade 1 e ao eixo Y padrão. */
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
