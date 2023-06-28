@@ -5,7 +5,7 @@ import outsideClick from "./outsideclick.js"; // O import é usado para chamar u
 export default class MenuMobile {
   // O constructor é usado para definir os parâmetros que serão usados na classe.
   constructor() {
-    this.menuButton = document.querySelector('[data-menu="button"]'); // Está selecionando o menu hamburguer e armazenando na constante menuButton.
+    this.menuButton = document.querySelector('.menu-hamburguer'); // Está selecionando o menu hamburguer e armazenando na constante menuButton.
     this.menuList = document.querySelector('[data-menu="smooth"]'); // Está selecionando o container nav e armazenando na constante menuList.
 
     this.activeClass = "active";  // Está criando uma variável que contém uma string chamada active.

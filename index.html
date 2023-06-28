@@ -18,13 +18,20 @@
 <body>
   <header class="header">
     <div class="container-size">
-      <button data-menu="button"></button>
+      <div class="menu-hamburguer" data-menu="button">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu" aria-label="Fechar e abrir o menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
       <div class="logo">
         <a href="#logo"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
       </div>
 
-      <div class="menu" data-menu="smooth" aria-expanded="false" aria-controls="menu">
+      <div class="container-nav" data-menu="smooth" aria-expanded="false" aria-controls="menu">
         <nav class="nav">
           <ul>
             <li class="active"><a href="#loja">Loja</a></li>

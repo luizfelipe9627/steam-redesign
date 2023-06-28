@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.menu {
+.container-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -20,29 +20,29 @@
   margin: 20px 0;
 }
 
-.menu ul {
+.container-nav ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.menu ul li {
+.container-nav ul li {
   margin-left: 40px;
   padding: 29px 0;
 }
 
-.menu ul li.active {
+.container-nav ul li.active {
   border-bottom: 4px solid var(--blue-30);
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.menu ul li.active a {
+.container-nav ul li.active a {
   color: var(--blue-30);
   font-weight: 700;
 }
 
-.menu ul li a {
+.container-nav ul li a {
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
@@ -108,7 +108,7 @@
   margin-left: 14px;
 }
 
-[data-menu="button"] {
+.menu-hamburguer {
   display: none;
 }
 
@@ -117,23 +117,21 @@
     justify-content: space-between;
   }
 
-  .menu {
+  .container-nav {
     display: none;
     position: absolute;
   }
 
-  .menu .nav ul li {
-    margin-left: 0;
-    border-bottom: 2px solid #FFF;
+  .container-nav nav {
+    display: flex;
+    background-color: var(--dark-20);
+    position: absolute;
+    left: -40px;
+    top: 115px;
+    z-index: 999;
   }
 
-  .menu ul li.active {
-    height: auto;
-    display: block;
-    border-top: 2px solid #fff;
-  }
-
-  .menu.active {
+  .container-size .container-nav.active {
     display: block;
     justify-content: center;
     /* O forwards é usado para quando acontecer a animação ele continuar no fim da animação. */
@@ -141,13 +139,78 @@
     z-index: 999;
   }
 
-  .container-size .menu .nav {
+  .container-nav ul {
     display: flex;
-    background-color: var(--dark-20);
+    justify-content: space-evenly;
+    flex-direction: column;  
+  } 
+
+  .container-nav ul li {
+    margin-left: 0;
+  }
+
+  .container-nav ul li.active {
+    height: auto;
+    display: block;
+    border-bottom: none;
+  }
+
+  .container-nav li a {
+    font-size: 0.9375rem;
+    height: 3.75rem;
+    margin-left: 1.875rem;
+  }
+
+  .container-nav li, .tools {
+    padding: 1.25rem 0;
+    width: 50vw;
+  }
+
+  .menu-hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s;
+  }
+
+  .menu-hamburguer.active {
+    transform: rotate(90deg); 
+  }
+
+  #checkbox-menu {
     position: absolute;
-    left: -40px;
-    top: 119px;
-    z-index: 999;
+    display: none;
+  }
+
+  .menu-hamburguer label {
+    position: relative;
+    display: block;
+    height: 1.25rem;
+    width: 1.5625rem;
+  }
+
+  .menu-hamburguer label span {
+    position: absolute;
+    display: block;
+    height: 0.3125rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1.875rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+  }
+
+  .menu-hamburguer label span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-hamburguer label span:nth-child(2) {
+    top: 0.5rem;
+  }
+
+  .menu-hamburguer label span:nth-child(3) {
+    top: 1rem;
   }
 
   .message {
@@ -162,47 +225,5 @@
     top: 39px;
     z-index: 999;
     left: -40px;
-  }
-
-  .menu .nav li, .tools {
-    padding: 1.25rem 0;
-    width: 50vw;
-  }
-
-  .menu .nav li a {
-    font-size: 0.9375rem;
-    height: 3.75rem;
-    margin-left: 1.875rem;
-  }
-
-  .menu .nav ul {
-    display: flex;
-    flex-direction: column;  
-  }
-
-  [data-menu="button"] {
-    display: flex;
-    align-items: center;
-    background-color: #222;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 10px;
-  }
-
-  [data-menu="button"]::before {
-    content: '';
-    display: inline-block;
-    height: 4px;
-    width: 24px;
-    background-color: #FFF;
-    box-shadow: 0 8px #FFF, 0 -8px #FFF;
-    margin-right: 4px;
-    transition: transform .3s;
-    border-radius: 4px;
-  }
-
-  [data-menu="button"].active::before {
-    transform: rotate(90deg);
   }
 }
