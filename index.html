@@ -42,7 +42,7 @@
         </nav>
 
         <div class="tools">
-          <div class="bell">
+          <div class="bell" data-modal="open">
             <a href="#sino"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
           </div>
 
@@ -404,6 +404,96 @@
   <footer class="footer">
     <img src="./src/assets/svg/steam.svg" alt="Logo">
   </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <!-- Adicionado o dataset modal="close" para ser usada no JavaScript. -->
+      <button class="close" data-modal="close">X</button>
+  
+      <div class="notifications">
+        <h1>Notificações</h1>
+        
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de amizade:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Parabéns! Você tem um novo amigo na Steam. luiz1234 aceitou seu convite de amizade. Aproveite para explorar jogos e jogar juntos!</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de conquista:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Conquista desbloqueada! Parabéns, Prozin! Você alcançou a conquista 'Implacável' no jogo Dead Resing 3. Continue jogando e conquiste mais!</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de mensagem recebida:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Você tem uma nova mensagem. Sem Bala enviou uma mensagem para você. Acesse a sua caixa de entrada para ler e responder.</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de atualização de jogo:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Atualização disponível! O jogo God of War foi atualizado para a versão 2-0-5. Aproveite as melhorias, correções de bugs e novos recursos!</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de evento:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Evento especial! Não perca o evento 'Recompensa em dobro' no jogo DayZ. Junte-se a outros jogadores e desfrute de desafios emocionantes, recompensas exclusivas e diversão garantida!</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de venda na loja:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Descontos incríveis! A loja da Steam está com uma grande promoção. Aproveite descontos de até 30% em diversos jogos. Corra e garanta suas novas aventuras!</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de convite para jogar:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Convite para jogar! 100Nome convidou você para jogar Dying Light. Junte-se a eles e mergulhe nessa experiência multiplayer.</p>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">
+            <p>Notificação de presente recebido:</p>
+          </div>
+
+          <div class="notification-desc">
+            <p>Presente recebido! NinguémJooga enviou um presente para você. Acesse a sua caixa de entrada para resgatar o seu presente.</p>
+          </div>
+      </div>
+    </div>
+  </section>
 
   <script src="./src/scripts/main.js"></script>
 </body>

@@ -7,9 +7,9 @@ export default class DropdownMenu {
   constructor() {
     this.dropdownMenus = document.querySelectorAll('[data-dropdown]'); // Está selecionando todos os elementos que contém o dataset dropdown.
 
-    this.profileDropdown = document.querySelector('.profile-dropdown'); // Está selecionando o elemento que contém o dataset profile-dropdown.
+    this.profileDropdown = document.querySelector('.profile-dropdown'); // Está selecionando o elemento que contém a classe profile-dropdown.
 
-    this.activeClass = "active"; // Está criando uma variável que contém a classe ativo.
+    this.activeClass = "active"; // Está criando uma variável que contém a classe active.
 
     this.events = ["touchstart", "click"]; // Está criando uma variável que contém um array com dois eventos, um sendo o touchstart e o outro sendo o click.
 
