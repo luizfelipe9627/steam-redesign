@@ -4,6 +4,7 @@
 @import url('./common/reset.css');
 
 @import url('./utils/variables.css');
+@import url('./utils/keyframes.css');
 
 @import url('./partials/header.css');
 

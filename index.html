@@ -18,21 +18,13 @@
 <body>
   <header class="header">
     <div class="container-size">
-      <div class="menu-hamburguer">
-        <input type="checkbox" id="checkbox-menu">
-        <label for="checkbox-menu" aria-label="Fechar e abrir o menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+      <button data-menu="button"></button>
 
       <div class="logo">
         <a href="#logo"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
       </div>
 
-
-      <div class="container-nav">
+      <div class="menu" data-menu="smooth" aria-expanded="false" aria-controls="menu">
         <nav class="nav">
           <ul>
             <li class="active"><a href="#loja">Loja</a></li>
@@ -138,7 +130,7 @@
             <div class="game">
               <a href="#fifa"><img src="./src/assets/img/fifa.png" alt="Fifa"></a>
             </div>
-        
+
             <div class="game">
               <a href="#minecraft"><img src="./src/assets/img/minecraft-1.png" alt="Minecraft"></a>
             </div>

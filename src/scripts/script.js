@@ -1,12 +1,6 @@
-const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu-hamburguer label");
-const container = document.querySelector(".container-nav");
+import MenuMobile from "./modules/menu-mobile.js";
 
-const openAndCloseMenu = () => {
-  nav.classList.toggle("active");
+const menuMobile = new MenuMobile();
+menuMobile.init();
 
-  container.classList.toggle("active");
-}
-
-menu.addEventListener("click", openAndCloseMenu)
 
