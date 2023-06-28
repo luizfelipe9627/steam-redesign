@@ -37,6 +37,7 @@
   height: 100%;
 }
 
+
 .container-nav ul li.active a {
   color: var(--blue-30);
   font-weight: 700;
@@ -48,6 +49,11 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #FFF
+}
+
+.container-nav ul li a:hover {
+  color: var(--blue-30);
+  font-weight: bold;
 }
 
 .tools {

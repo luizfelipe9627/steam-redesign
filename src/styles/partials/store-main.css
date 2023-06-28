@@ -21,6 +21,11 @@
   color: #FFF;
 }
 
+.store-navegation ul li a:hover {
+  color: var(--blue-30);
+  font-weight: bold;
+}
+
 .store-navegation ul li {
   padding: 29px 0;
 }

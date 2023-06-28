@@ -24,7 +24,7 @@ export default class DropdownMenu {
 
     element.classList.add(this.activeClass); // Adiciona ao element(data-dropdown) a classe ativo.
 
-    this.profileDropdown.classList.add(this.activeClass); // Adiciona ao profileDropdown a classe active.
+    this.profileDropdown.classList.toggle(this.activeClass); // Adiciona ao profileDropdown a classe active.
 
     // Executa a função outsideClick que tem o elemento que está sendo clicado como referencia, no caso o element(data-dropdown) da função, a array referenciando o events que vão ser responsável por ativar o callback.
     outsideClick(element, this.events, () => {
