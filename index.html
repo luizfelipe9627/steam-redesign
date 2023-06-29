@@ -42,11 +42,11 @@
         </nav>
 
         <div class="tools">
-          <div class="bell" data-modal="open">
+          <div class="bell" data-modal="open-notifications">
             <a href="#sino"><img src="./src/assets/svg/bell.svg" alt="Sino"></a>
           </div>
 
-          <div class="message">
+          <div class="message" data-modal="open-messages">
             <a href="#mensagem"><img src="./src/assets/svg/message-circle.svg" alt="Mensagem"></a>
           </div>
         </div>
@@ -66,9 +66,9 @@
               <li><a href="#configuracoes">Configurações</a></li>
               <li><a href="#suporte">Suporte</a></li>
             </ul>
+          </div>
         </div>
       </div>
-    </div>
   </header>
 
   <main>
@@ -405,11 +405,11 @@
     <img src="./src/assets/svg/steam.svg" alt="Logo">
   </footer>
 
-  <section class="modal-container" data-modal="container">
+  <section class="modal-container" data-modal="container-notifications">
     <div class="modal">
       <!-- Adicionado o dataset modal="close" para ser usada no JavaScript. -->
-      <button class="close" data-modal="close">X</button>
-  
+      <button class="close" data-modal="close-notifications">X</button>
+
       <div class="notifications">
         <h1>Notificações</h1>
 
@@ -430,16 +430,6 @@
 
           <div class="notification-desc">
             <p>Conquista desbloqueada! Parabéns, Prozin! Você alcançou a conquista 'Implacável' no jogo Dead Resing 3. Continue jogando e conquiste mais!</p>
-          </div>
-        </div>
-
-        <div class="notification">
-          <div class="notification-title">
-            <p>Mensagem recebida</p>
-          </div>
-
-          <div class="notification-desc">
-            <p>Você tem uma nova mensagem. Sem Bala enviou uma mensagem para você. Acesse a sua caixa de entrada para ler e responder.</p>
           </div>
         </div>
 
@@ -491,11 +481,31 @@
           <div class="notification-desc">
             <p>Presente recebido! NinguémJooga enviou um presente para você. Acesse a sua caixa de entrada para resgatar o seu presente.</p>
           </div>
+        </div>
       </div>
+  </section>
+
+  <section class="modal-container" data-modal="container-messages">
+    <div class="modal">
+      <!-- Adicionado o dataset modal="close" para ser usada no JavaScript. -->
+      <button class="close" data-modal="close-messages">X</button>
+
+      <div class="messages">
+        <h1>Mensagens</h1>
+
+        <div class="message">
+          <div class="message-desc">
+            <p>No momento você não tem nenhuma mensagem.</p>
+          </div>
+        </div>
+
+      </div>
+
+
     </div>
   </section>
 
-  <script src="./src/scripts/main.js"></script>
+  <script type="module" src="./src/scripts/script.js"></script>
 </body>
 
 </html>

@@ -18,6 +18,11 @@
   height: auto;
 }
 
+.game-free:hover, .game-free-day:hover {
+  transform: translateY(10px);
+  transition: transform 0.5s;
+}
+
 .game-free-title h2 {
   font-size: 24px;
   font-weight: 500;

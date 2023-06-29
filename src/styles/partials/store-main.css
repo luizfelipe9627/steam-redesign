@@ -23,7 +23,8 @@
 
 .store-navegation ul li a:hover {
   color: var(--blue-30);
-  font-weight: bold;
+  font-weight: 700;
+  transition: color 0.5s;
 }
 
 .store-navegation ul li {
@@ -88,7 +89,11 @@
 
 .store-games .game img {
   width: 100vw;
-  cursor: pointer;
+}
+
+.store-games .game img:hover {
+  transform: translateY(-20px);
+  transition: transform 0.5s;
 }
 
 @media (min-width: 320px) and (max-width: 720px) {

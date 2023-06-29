@@ -53,7 +53,7 @@
 
 .container-nav ul li a:hover {
   color: var(--blue-30);
-  font-weight: bold;
+  transition: color 0.5s;
 }
 
 .tools {

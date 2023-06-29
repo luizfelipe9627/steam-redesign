@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+[data-modal="container-messages"] .modal {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
 .modal-container.active {
   display: flex;
 }
@@ -61,10 +67,19 @@
   left: -15px;
 }
 
-.notification-desc {
+.notification-desc, .message-desc {
   color: var(--dark-30);
   margin-left: 10px;
   font-size: 14px;
+}
+
+[data-modal="container-messages"] .modal .messages h1 {
+  margin: 0;
+}
+
+.message-desc {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .modal h1 {
@@ -89,5 +104,5 @@
   border: none;
   font-size: 24px;
   color: #FFF;
-  font-weight: bold;
+  font-weight: 700;
 }

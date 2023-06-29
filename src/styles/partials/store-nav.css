@@ -8,6 +8,11 @@
   gap: 16px;
 }
 
+.store-nav li a:hover {
+  background-color: var(--blue-40);
+  transition: background-color 0.5s;
+}
+
 .store-nav li a {
   display: flex;
   align-items: center;

@@ -1,11 +1,11 @@
 // Classe responsável por fazer o modal de login aparecer e sumir da tela.
 // O export é usado para permitir que o código seja usado em outro arquivo JS. O default é geralmente usado para quando tem que exportar somente uma função/classe do mesmo arquivo.
-export default class ModalNotifications {
+export default class ModalMessages {
   // O constructor é usado para definir os parâmetros que serão usados na classe.
   constructor() {
-    this.openButton = document.querySelector('[data-modal="open-notifications"]'); // Está selecionando o elemento que contém o dataset modal com o valor open.
-    this.closeButton = document.querySelector('[data-modal="close-notifications"]'); // Está selecionando o elemento que contém o dataset modal com o valor close.;
-    this.containerModal = document.querySelector('[data-modal="container-notifications"]'); // Está selecionando o elemento que contém o dataset modal com o valor container.
+    this.openButton = document.querySelector('[data-modal="open-messages"]'); // Está selecionando o elemento que contém o dataset modal com o valor open.
+    this.closeButton = document.querySelector('[data-modal="close-messages"]'); // Está selecionando o elemento que contém o dataset modal com o valor close.;
+    this.containerModal = document.querySelector('[data-modal="container-messages"]'); // Está selecionando o elemento que contém o dataset modal com o valor container.
 
     this.containerNav = document.querySelector('.container-nav'); // Está selecionando o elemento que contém a classe container-nav.
     this.menuHamburguer = document.querySelector('.menu-hamburguer'); // Está selecionando o elemento que contém a classe menu-hamburguer.
