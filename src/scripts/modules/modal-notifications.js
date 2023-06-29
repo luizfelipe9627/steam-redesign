@@ -1,6 +1,6 @@
 // Classe responsável por fazer o modal de login aparecer e sumir da tela.
 // O export é usado para permitir que o código seja usado em outro arquivo JS. O default é geralmente usado para quando tem que exportar somente uma função/classe do mesmo arquivo.
-export default class Modal {
+export default class ModalNotifications {
   // O constructor é usado para definir os parâmetros que serão usados na classe.
   constructor() {
     this.openButton = document.querySelector('[data-modal="open"]'); // Está selecionando o elemento que contém o dataset modal com o valor open.
