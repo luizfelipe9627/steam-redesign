@@ -2,7 +2,7 @@
 
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
-<img src="https://github.com/luizfelipe9627/steam-redesign/blob/main/assets/img/apresentacao.gif" alt="Apresentação da Steam">
+<img src="https://github.com/luizfelipe9627/steam-redesign/blob/main/src/assets/img/apresentacao.gif" alt="Apresentação da Steam">
 
 ## 📄 Descrição
 
@@ -12,11 +12,11 @@ Steam é um software de gestão de direitos digitais criado pela Valve Corporati
 
 Esse projeto foi criado com o intuito de práticar HTML5, CSS3, JavaScript(principalmente POO). Utilizei também o Node.JS para o webpack e eslint para dar suporte e melhoramento ao código.
 
-### <a href="https://luizfelipe9627-steam-redesign.app">Acesse o site</a>
+### <a href="https://luizfelipe9627-steam-redesign.netlify.app">Acesse o site</a>
 
 ## 🎨 Layout
 
-### Créditos do layout para o <a href="https://www.linkedin.com/in/iuricode">Iuri Silva</a>
+### Créditos do layout para o <a href="https://www.linkedin.com/in/iuricode">Iuri Silva</a>.
 
 ## 💻 Tecnologias utilizadas
 
