@@ -164,7 +164,7 @@
     width: 50vw;
   }
 
-  .menu-hamburguer {
+  .js [data-menu="button"] {
     height: 100%;
     display: flex;
     align-items: center;
@@ -172,23 +172,23 @@
     transition: transform .3s;
   }
 
-  .menu-hamburguer.active {
+  .js [data-menu="button"].active {
     transform: rotate(90deg); 
   }
 
-  #checkbox-menu {
+  .js [data-menu="button"] #checkbox-menu {
     position: absolute;
     display: none;
   }
 
-  .menu-hamburguer label {
+  .js [data-menu="button"] label {
     position: relative;
     display: block;
     height: 1.25rem;
     width: 1.5625rem;
   }
 
-  .menu-hamburguer label span {
+  .js [data-menu="button"] label span {
     position: absolute;
     display: block;
     height: 0.3125rem;
@@ -199,23 +199,23 @@
     cursor: pointer;
   }
 
-  .menu-hamburguer label span:nth-child(1) {
+  .js [data-menu="button"] label span:nth-child(1) {
     top: 0;
   }
 
-  .menu-hamburguer label span:nth-child(2) {
+  .js [data-menu="button"] label span:nth-child(2) {
     top: 0.5rem;
   }
 
-  .menu-hamburguer label span:nth-child(3) {
+  .js [data-menu="button"] label span:nth-child(3) {
     top: 1rem;
   }
 
-  .tools .message {
+  .js [data-menu="smooth"] .tools .message {
     margin: 0 0 0 40px;
   }
 
-  .tools {
+  .js [data-menu="smooth"] .tools {
     display: flex;
     justify-content: center;
     background-color: var(--dark-20);
