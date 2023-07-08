@@ -22,7 +22,7 @@ Esse projeto foi criado com o intuito de práticar HTML5, CSS3, JavaScript(princ
 
 - `HTML5`
 - `CSS3`  
-- `JAVASCRIPT ES6`
+- `JAVASCRIPT`
 - `ESLINT`
 - `WEBPACK`
 - `NODE.JS`
