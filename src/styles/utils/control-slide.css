@@ -1,0 +1,22 @@
+.js [data-control="slide"] {
+  display: flex;
+  justify-content: center;
+}
+
+.js [data-control="slide"] span {
+  width: 64px;
+  height: 6px;
+  margin-bottom: 80px;
+  background-color: #FFF;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.js [data-control="slide"] span:not(:last-child) {
+  margin-right: 24px;
+}
+
+.js [data-control="slide"] span.active {
+  background-color: var(--blue-30);
+  cursor: default;
+}

@@ -18,8 +18,6 @@ export default class DropdownMenu {
 
   // Criado uma função chamada activeDropdownMenu que tem como intuito abrir e fechar o dropdown ao clique, recebe um parâmetro chamado de event.
   activeDropdownMenu(event) {
-    event.preventDefault(); // Impede o carregamento da página.
-
     const element = event.currentTarget; // Está criando uma variável que contém o elemento que está sendo clicado.
 
     element.classList.add(this.activeClass); // Adiciona ao element(data-dropdown) a classe ativo.

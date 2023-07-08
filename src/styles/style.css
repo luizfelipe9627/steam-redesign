@@ -7,11 +7,11 @@
 @import url('./utils/keyframes.css');
 @import url('./utils/dropdown.css');
 @import url('./utils/modal.css');
+@import url('./utils/control-slide.css');
 
 @import url('./partials/header.css');
 
-@import url('./partials/featured.css');
-
+@import url('./partials/featureds-games.css');
 @import url('./partials/store-main.css');
 @import url('./partials/store-nav.css');
 @import url('./partials//store-categories.css');

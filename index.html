@@ -4,15 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Steam é uma plataforma de distribuição digital de jogos e software desenvolvida pela Valve Corporation. Lançada em 2003, a Steam revolucionou a forma como os jogos são adquiridos, baixados e jogados pelos usuários. Ela oferece uma vasta biblioteca de jogos de diferentes gêneros, desde títulos indie até grandes lançamentos de estúdios renomados.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Se o usuário estiver com o JavaScript habilitado, o site vai adicionar a classe no HTML. -->
+  <script>
+    document.documentElement.className += 'js'; // Adiciona a classe js no HTML.
+  </script>
 
   <link rel="shortcut icon" href="./src/assets/svg/favicon.svg" type="image/x-icon">
 
   <link rel="stylesheet" href="./src/styles/style.css">
 
-  <title>Steam</title>
+  <title>Bem-vindo(a) ao Steam</title>
 </head>
 
 <body>
@@ -28,10 +34,10 @@
       </div>
 
       <div class="logo">
-        <a href="#logo"><img src="./src/assets/svg/steam.svg" alt="Logo"></a>
+        <a href="#steam"><img src="./src/assets/svg/steam.svg" alt="Logo Steam"></a>
       </div>
 
-      <div class="container-nav" data-menu="smooth" aria-expanded="false" aria-controls="menu">
+      <div class="container-nav">
         <nav class="nav">
           <ul>
             <li class="active"><a href="#loja">Loja</a></li>
@@ -54,12 +60,17 @@
 
       <div class="profile">
         <div class="profile-img">
-          <a href="#profile"><img src="./src/assets/img/profile.png" alt="Perfil"></a>
+          <a href="#profile">
+            <img src="./src/assets/img/profile.png" alt="Perfil">
+          </a>
         </div>
 
         <div class="profile-dropdown">
           <div data-dropdown>
-            <a href="#dropdown"><img src="./src/assets/svg/chevron-right.svg" alt="Seta"></a>
+            <a href="#dropdown">
+              <img src="./src/assets/svg/chevron-right.svg" alt="Seta">
+            </a>
+
             <ul class="dropdown-menu">
               <li><a href="#carteira">Carteira</a></li>
               <li><a href="#conquistas">Conquistas</a></li>
@@ -73,30 +84,79 @@
 
   <main>
     <section class="featureds-games">
-      <div class="featured-game">
-        <div class="background-dark">
-          <div class="game container-size">
-            <div class="game-title">
-              <img src="./src/assets/svg/reade-dead.svg" alt="Read Dead Redemption II">
-            </div>
+      <ul class="slides-games">
+        <li class="slide-game read-dead-redemption">
+          <div class="background-dark">
+            <div class="game container-size">
+              <div class="game-title">
+                <img src="./src/assets/img/read-dead-redemption-logo.png" alt="Read Dead Redemption II">
+              </div>
 
-            <div class="game-desc">
-              <p> Estados Unidos, 1899. O fim da era do velho oeste começou, e as autoridades estão caçando as últimas gangues de fora da lei que restam. Os que não se rendem, nem sucumbem, são mortos.</p>
-            </div>
+              <div class="game-desc">
+                <p>Estados Unidos, 1899. O fim da era do velho oeste começou, e as autoridades estão caçando as últimas gangues de fora da lei que restam. Os que não se rendem, nem sucumbem, são mortos.</p>
+              </div>
 
-            <div class="game-buy">
-              <button><a href="#comprar">Compre agora</a></button>
+              <div class="game-buy">
+                <button><a href="#comprar">Compre agora</a></button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
 
-      <div class="featured-line">
-        <span></span>
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-      </div>
+        <li class="slide-game subnautica">
+          <div class="background-dark">
+            <div class="game container-size">
+              <div class="game-title">
+                <img src="./src/assets/img/subnautica-below-zero-logo.png" alt="Subnautica" width="300">
+              </div>
+
+              <div class="game-desc">
+                <p>Below Zero se passa dois anos após o Subnautica original. Retorne ao Planeta alienígena 4546B para descobrir a verdade por trás de um encobrimento mortal.</p>
+              </div>
+
+              <div class="game-buy">
+                <button><a href="#comprar">Compre agora</a></button>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="slide-game days-gone">
+          <div class="background-dark">
+            <div class="game container-size">
+              <div class="game-title">
+                <img src="./src/assets/img/days-gone-logo.png" alt="Days Gone" width="300">
+              </div>
+
+              <div class="game-desc">
+                <p>Em Days Gone acompanhamos Deacon St John, antigo membro de uma gangue de motoqueiros, em busca da sua esposa através do Oregon, nos Estados Unidos em um cenário pós-apocalíptico.</p>
+              </div>
+
+              <div class="game-buy">
+                <button><a href="#comprar">Compre agora</a></button>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="slide-game sons-of-the-forest">
+          <div class="background-dark">
+            <div class="game container-size">
+              <div class="game-title">
+                <img src="./src/assets/img/sons-of-the-forest-logo.png" alt="Sons of the Forest" width="170">
+              </div>
+
+              <div class="game-desc">
+                <p>Muitos anos após os eventos em The Forest, uma equipe de mercenários é enviada para a ilha chamada "Site 2" para procurar o fundador da PuffCorp e sua família.</p>
+              </div>
+
+              <div class="game-buy">
+                <button><a href="#comprar">Compre agora</a></button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="store container-size">
@@ -395,14 +455,16 @@
         <h1 class="store-scroll-title">Continue rolando para mais recomendações</h1>
         <p class="store-scroll-desc">Abaixo, você encontrará uma variedade de títulos que podem lhe interessar em categorias do Steam</p>
         <a href="#ver-mais" class="store-scroll-down">
-          <img src="./src/assets/svg/chevron-right.svg" alt="">
+          <img src="./src/assets/svg/chevron-right.svg" alt="Seta para baixo">
         </a>
       </section>
     </section>
   </main>
 
   <footer class="footer">
-    <img src="./src/assets/svg/steam.svg" alt="Logo">
+    <a href="#steam">
+      <img src="./src/assets/svg/steam.svg" alt="Logo Steam">
+    </a>
   </footer>
 
   <section class="modal-container" data-modal="container-notifications">
@@ -498,14 +560,11 @@
             <p>No momento você não tem nenhuma mensagem.</p>
           </div>
         </div>
-
       </div>
-
-
     </div>
   </section>
 
-  <script type="module" src="./src/scripts/script.js"></script>
+  <script type="module" src="./src/scripts/main.js"></script>
 </body>
 
 </html>

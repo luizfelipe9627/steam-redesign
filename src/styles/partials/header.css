@@ -37,7 +37,6 @@
   height: 100%;
 }
 
-
 .container-nav ul li.active a {
   color: var(--blue-30);
   font-weight: 700;
@@ -83,7 +82,7 @@
   border-radius: 50%;
 }
 
-.message {
+.tools .message {
   margin: 0 64px 0 40px;
 }
 
@@ -105,13 +104,6 @@
   right: 0;
   background-color: #33FF00;
   border-radius: 50%;
-}
-
-.profile-dropdown{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 14px;
 }
 
 .menu-hamburguer {
@@ -219,7 +211,7 @@
     top: 1rem;
   }
 
-  .message {
+  .tools .message {
     margin: 0 0 0 40px;
   }
 

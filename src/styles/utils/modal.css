@@ -12,7 +12,7 @@
 }
 
 [data-modal="container-messages"] .modal {
-  width: auto;
+  width: 80vw;
   height: auto;
   padding: 20px;
 }

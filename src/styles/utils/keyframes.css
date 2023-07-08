@@ -25,3 +25,18 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@keyframes floating {
+  /* Começa no eixo Y padrão. */
+  0% {
+    transform: translateY(0);
+  }
+  /* Vai para 25px do eixo Y. */
+  50% {
+    transform: translateY(25px);
+  }
+  /* Volta para o eixo Y padrão. */
+  100% {
+    transform: translateY(0);
+  }
+}
