@@ -10,7 +10,7 @@ Steam é um software de gestão de direitos digitais criado pela Valve Corporati
 
 ## 📑 Observação
 
-Esse projeto foi criado com o intuito de práticar HTML5, CSS3, JavaScript(principalmente POO). Utilizei também o Node.JS para o webpack e eslint para dar suporte e melhoramento ao código.
+Esse projeto foi criado com o intuito de práticar HTML5, CSS3, JavaScript(principalmente POO). Utilizei também o Node.JS para o Webpack e Eslint para dar suporte e melhoramento ao código.
 
 ### <a href="https://luizfelipe9627-steam-redesign.netlify.app">Acesse o site</a>
 
