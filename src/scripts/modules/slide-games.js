@@ -98,7 +98,7 @@ export default class SlideGames {
   // Método responsável por adicionar os eventos ao wrapper.
   addSlideEvents() {
     this.wrapper.addEventListener("mousedown", this.onStart); // Adiciona o evento mousedown ao wrapper que ao ser acionado executa o método onStart.
-    this.wrapper.addEventListener("touchstart", this.onStart); // Adiciona o evento touchstart ao wrapper que ao ser acionado executa o método onStart.
+    this.wrapper.addEventListener("touchstart", this.onStart, {passive: true}); // Adiciona o evento touchstart ao wrapper que ao ser acionado executa o método onStart.
     this.wrapper.addEventListener("mouseup", this.onEnd); // Adiciona o evento mouseup ao wrapper que ao ser acionado executa o método onEnd.
     this.wrapper.addEventListener("touchend", this.onEnd); // Adiciona o evento touchend ao wrapper que ao ser acionado executa o método onEnd.
   }

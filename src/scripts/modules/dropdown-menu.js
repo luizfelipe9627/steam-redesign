@@ -38,7 +38,7 @@ export default class DropdownMenu {
     this.dropdownMenus.forEach((menu) => {
       // Criado uma array que contém dois eventos de escuta, o forEach passa percorre por cada evento(nomeado com userEvent).
       this.events.forEach((userEvent) => {
-        menu.addEventListener(userEvent, this.activeDropdownMenu); // No menu atual do forEach anterior pega o evento disparado e aciona a função activeDropdownMenu criada.
+        menu.addEventListener(userEvent, this.activeDropdownMenu, {passive: true}); // No menu atual do forEach anterior pega o evento disparado e aciona a função activeDropdownMenu criada.
       });
     });
   }

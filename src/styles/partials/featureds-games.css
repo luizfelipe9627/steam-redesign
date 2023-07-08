@@ -4,24 +4,23 @@
 }
 
 .read-dead-redemption {
-  background-image: url('../../assets/img/read-dead.png');
-  background-position: start;
+  background-image: url('../../assets/img/read-dead.webp');
 }
 
 .subnautica {
-  background-image: url('../../assets/img/subnautica-below-zero.png');
+  background-image: url('../../assets/img/subnautica-below-zero.webp');
   background-position: center;
   background-size: cover;
 }
 
 .days-gone {
-  background-image: url('../../assets/img/days-gone.jpg');
+  background-image: url('../../assets/img/days-gone.webp');
   background-position: center;
   background-size: cover;
 }
 
 .sons-of-the-forest {
-  background-image: url('../../assets/img/sons-of-the-forest.jpeg');
+  background-image: url('../../assets/img/sons-of-the-forest.webp');
   background-position: center;
   background-size: cover;
 }
